@@ -1,0 +1,7 @@
+### 测试 POST /api/prompt 接口
+POST http://localhost:5174/api/prompt
+Content-Type: application/json
+
+{
+  "idea": "我有一个关于共享生态农场的项目，主打生态蔬菜种植、共享认领、文旅融合，请分析并推荐 Prompt。"
+}

@@ -1,0 +1,13 @@
+POST https://api.deepseek.com/v1/chat/completions
+Content-Type: application/json
+Authorization: Bearer sk-03ba0b5601d04ae6b12e162b467d4667
+
+{
+  "model": "deepseek-reasoner",
+  "messages": [
+    {
+      "role": "user",
+      "content": "测试一下"
+    }
+  ]
+}
