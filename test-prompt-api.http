@@ -1,7 +1,7 @@
-### 测试 POST /api/prompt 接口
-POST http://localhost:5174/api/prompt
+### 测试 POST /api/prompt 接口（推荐 Prompt + 智能命名）
+POST http://localhost:5174/api/analyze/project
 Content-Type: application/json
 
 {
-  "idea": "我有一个关于共享生态农场的项目，主打生态蔬菜种植、共享认领、文旅融合，请分析并推荐 Prompt。"
+  "idea": "我想设计一个灵魂画师的小程序，为很多孩子们设计未来的理想人设，帮助他们激发潜能，请你给我一些思路"
 }

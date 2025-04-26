@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
   const { idea } = await req.json();
 
   const apiKey = process.env.DEEPSEEK_API_KEY!;
-  const model = 'deepseek-reasoner';
+  const model = 'deepseek-chat';
   const url = 'https://api.deepseek.ai/v1/chat/completions';
 
   try {
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model,
+        model: 'deepseek-chat',
         messages: [
           {
             role: 'user',
